@@ -97,10 +97,312 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat 400', sans-serif;
+  font-size: 1em;
+}
+
+h2 {
+    font-family: 'Source Code Pro 600', monospace;
+    font-size: 2.25em;
+    color: #6F1696;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-family: 'Montserrat 700', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff; 
+    } 
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
 
 
 
+
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header {
+    background-color: #1F202B; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+header .content-wrapper{
+    margin: 20px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.header-divider {
+  background: #ffffff;
+  height: 1px;
+  width: 100%;
+  }
+
+header p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+header nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    
+}
+
+header p, a {
+    text-transform: lowercase;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 50px 0;
+}
+
+
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+
+/****** HERO ******/
+
+#hero-area {
+    display: flex;
+    justify-content: center;    
+    min-height: 850px;
+    background: url('../img/hero-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#hero-area h1 {
+    font-family: 'Source Code Pro 600', monospace;
+    font-size: 3.5em;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-transform: lowercase;
+    padding: 60px 10px;
+}
+
+#hero-area span {
+    color: #0000ff;
+}
+
+/****** PORTFOLIO ******/
+
+#portfolio {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1F202B;  
+    align-content: center;
+}
+
+#portfolio .content-wrapper {
+    margin: 20px 20px;
+}
+
+#portfolio .portfolio-pic {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+ #portfolio img {
+    width: 80%;
+    margin: auto;   
+ }
+
+ #portfolio .portfolio-description {
+    width: 80%;
+    justify-content: center;
+    padding: 30px 40px;
+
+    
+    
+ }
+
+ #portfolio .portfolio-description h3 {
+    font-size: 1em;
+    text-align: center;
+    
+ }
+
+ #portfolio .portfolio-description p {
+    text-align: center;
+
+ }
+
+#portfolio h2 {
+    text-align: center;
+}
+
+#portfolio h3 {
+    font-family: 'Montserrat 700', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff; 
+    text-align: center; 
+
+}
+
+#portfolio p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+#portfolio span {
+    font-family: 'Montserrat', sans-serif;
+    color: #6F1696;
+
+ }  
+
+#portfolio a {
+    text-decoration: underline;
+    color: #6F1696;
+ }
+
+ 
+
+
+/***** ABOUT *****/
+
+#about {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 450px;
+    background: url('../img/about-me.png');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+       
+}
+
+#about p, li{
+    color: #1F202B;
+}
+
+#about .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    margin: 0 20px;
+    padding: 0;
+
+}
+
+#about h2 {
+    margin: 20px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+#about p {
+    margin: 0;
+}
+
+ 
+
+/****** CONTACT *******/
+
+footer {
+    display: flex;
+    background-color: #1F202B;
+    min-height: 600px;
+    flex-flow: row wrap;
+}
+
+footer .content-wrapper {
+    margin: 20px 0;
+}
+
+footer .contact-content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer .social {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .social-icons {
+    font-size: 2em;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+footer .social-icons p {
+    margin: 0;
+}
+
+footer .contact {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+footer .social-icons {
+    text-align: center;
+}
+
+
+footer h2 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+footer h4 {
+    margin: 20px 0;
+    font-family: 'Montserrat 700', sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+footer .copyright {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+}
 
 
 
@@ -199,16 +501,47 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+/* TABLET STYLES HERE */
+@media only screen and (min-width:768px) {
+
+    footer .content-wrapper {
+      width: 100%;
+      margin: 60px 0;
+    }
+
+    footer .contact-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+    footer .contact {
+        width: 50%;
+    }
+
+    footer .social {
+      width: 50%;
+      text-align: center;
+    }
+
+
+    footer .social-icons {
+        justify-content: space-between;
+    }
+
+}   
+
+/* DESKTOP STYLES HERE */
+@media only screen and (min-width: 1200px){
+
+
 }
+
+
+
+
+
 
 /* ==========================================================================
    Print styles.
